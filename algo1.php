@@ -10,12 +10,15 @@ CN5: testFindValueInTab5(["je",9,"suis",8,5,"la"] , 6) => "false"
 
 function findValueInTab($tab, $value)
 {
-    foreach ($tab as $key => $element) {
-        if ($element == $value) {
-            return $key;
+    $taille = count($tab);
+    $compteur = 0;
+
+    while ($compteur != $taille){
+        if ($tab[$compteur] == $value){
+            return $compteur;
         }
+        $compteur++;
     }
-    return false;
 }
 
 var_dump(findValueInTab([8,9] , 9));
