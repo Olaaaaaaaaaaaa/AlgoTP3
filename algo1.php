@@ -33,7 +33,7 @@ function testFindValueInTab2()
 }
 function testFindValueInTab3()
 {
-    if (findValueInTab(["chien", "chat", "poisson", "singe" , "singe"], "singe") == 3) {
+    if (findValueInTab(["chien", "chat", "poisson", "singe"], "singe") == 3) {
         echo "Le test est réussie";
     } else {
     echo  "Le test n'est pas réussie";
